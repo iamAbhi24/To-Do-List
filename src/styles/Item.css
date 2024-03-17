@@ -1,0 +1,71 @@
+li{
+    list-style-type: none ;
+    padding:0.5rem 1.5rem;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin: 0rem .5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #D3D3D3;
+}
+
+li::before{
+    content:"";
+    background-image: url("../img/unchecked.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.closeIcon{
+    position: absolute;
+    right: 0;    
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0em 0.3em;
+}
+
+.position{
+    position: absolute;
+    right:8%;    
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.position:hover{
+    background-color: #5cb3ff;
+    transition: background-color 0.3s ease;
+}
+
+button{
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+.closeIcon:hover{
+    background-color: #ff0000dc;
+    transition: background-color 0.3s ease;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    background-image: url("../img/checked.png"); /* Change background image when checked */
+}
+
+

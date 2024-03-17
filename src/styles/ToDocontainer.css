@@ -1,0 +1,19 @@
+.ToDo_App{
+    max-width: 50vw;
+    min-height: 20vh;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10Vh;
+    background-color: white;
+  }
+
+
+
+/* for small size device */
+@media screen and (max-width:600px){
+  .ToDo_App{
+    max-width: 70vw;
+
+  }
+     
+  }

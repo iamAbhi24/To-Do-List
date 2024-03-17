@@ -1,0 +1,64 @@
+.txtInput{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.input{
+    width: 60%;
+    padding: 1rem;
+    background-color: #D3D3D3;
+    border: none;
+    border-radius:25px;
+}
+
+.add-btn{
+    padding: 0.5rem,2rem;
+    cursor: pointer;
+    background-color:hsl(0, 99%, 51%) ;
+    border: none;
+    margin-left: -2rem;
+    border-radius:25px;
+    width: 15%;
+}
+
+img{
+    width: 2em;
+    margin-left: 0.5rem;
+}
+.heading{
+    display: flex;
+    padding: 0.5rem;
+}
+
+/* to remove the default border when user clicking in the input field */
+input[type="text"]:focus {
+    outline: none;
+}
+
+
+
+/* CSS for small width device */
+@media screen and (max-width:600px){
+    img{
+        width: 1em;
+        margin-left: 0.5rem;
+    }
+
+    input{
+        width: 80%;
+        padding: 0.5rem;
+        background-color: #D3D3D3;
+        border: none;
+        border-radius:25px;
+    }
+
+    .add-btn{
+        padding: 0.5rem,2rem;
+        cursor: pointer;
+        background-color:hsl(0, 99%, 51%) ;
+        border: none;
+        margin-left: -2rem;
+        border-radius:25px;
+        width: 25%;
+    }
+}
